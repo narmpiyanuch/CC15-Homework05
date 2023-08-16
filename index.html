@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        main {
+            margin: auto;
+            padding: 10px;
+
+        }
+        .card {
+            position: relative;
+            border: solid lightgray;
+            width: 200px;
+            height: 260px;
+            border-radius: 5px;
+            margin: 5px;
+            /* overflow: hidden; */
+        }
+        .card img{
+            width: 100%;
+            padding-top: 15px;
+        }
+        hr {
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 10px;
+        }
+        .container p {
+            display: inline;
+            padding: 10px;
+            font: caption;
+            font-size: larger;
+        }
+        .card::after {
+            position: absolute;
+            content: "9";
+            right: -10px;
+            top: -10px;
+            font-size: 22px;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(233, 11, 11);
+            border-radius: 50%;
+            display: flex;
+            color:white;
+            justify-content: center;
+            align-items: center;
+        }
+        .card::before {
+            position: absolute;
+            left: 8px;
+            top: 6px;
+            content: "X";
+            font-size: 20px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="card">
+            <img src="./human-man-10.svg" alt="pic">
+            <hr />
+            <div class="container">
+                <p>A.Rudiger</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
